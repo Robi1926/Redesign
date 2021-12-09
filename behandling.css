@@ -1,0 +1,72 @@
+body {
+  background-color: #f2f2f2;
+}
+
+/**************************************** overskrift indstillinger *************************/
+/* overskrift dækker over den første del af "behandlings" siden, og "tidsbestilling" er den anden del af siden */
+.overskrift_behandling {
+  display: grid;
+}
+
+.overskrift_behandling h1 {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  border-bottom: 2px solid #f2ccc8;
+  margin: 40px;
+  padding: 40px;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 700px) {
+  .overskrift_behandling h1 {
+    font-size: 3rem;
+  }
+}
+
+/**************************************** overskrift IMG indstillinger *************************/
+.ph_img {
+  place-self: center;
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+}
+
+/**************************************** tidsbestilling indstillinger *************************/
+.tidsbestilling {
+  display: grid;
+}
+
+.test_foto {
+  width: 50%;
+  place-self: center start;
+  margin-left: 40px;
+  grid-column: 1;
+}
+/* "book" er klassen der indeholder tekst der opfordrer til at bestille en tid */
+.book {
+  font-family: "Sora", sans-serif;
+  font-size: 0.5rem;
+  border-bottom: 2px solid #f2ccc8;
+  margin: 40px;
+  padding: 40px;
+  padding-bottom: 5px;
+}
+
+.specifikationer {
+  font-family: "Sora", sans-serif;
+  font-size: 0.5rem;
+  grid-column: 2;
+  margin-right: 50px;
+}
+
+/* responsiv indstilling så overskriften og p passer i størrelsen */
+@media (min-width: 700px) {
+  .book {
+    font-size: 2rem;
+  }
+
+  .specifikationer {
+    font-size: 2rem;
+    margin-right: 80px;
+  }
+}
