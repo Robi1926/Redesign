@@ -1,6 +1,5 @@
 img {
   max-width: 100%;
-  border-radius: 8px;
 }
 
 #kropsterapi {
@@ -25,7 +24,7 @@ footer {
   margin-bottom: 50px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   #kropsterapi {
     margin: 100px;
   }

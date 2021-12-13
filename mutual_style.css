@@ -1,21 +1,27 @@
 body {
-  color: ;
+  background-color: #fffaf0;
 }
 
 h1 {
   font-family: "Sora", sans-serif;
   font-weight: normal;
-  color: ;
+  color: #934073;
 }
 
 h2 {
   font-family: "Sora", sans-serif;
   font-weight: normal;
+  color: #a33d81;
 }
 
 h3 {
   font-family: "Sora", sans-serif;
   font-weight: normal;
+  color: #ac6092;
+}
+
+footer h3 {
+  color: white;
 }
 
 p {
