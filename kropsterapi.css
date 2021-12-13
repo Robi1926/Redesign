@@ -1,57 +1,88 @@
-#kropsterapi {
-  margin: 100px;
-}
-
-#boks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#billede {
-  grid-column: 1/2;
-}
-
-#tekst {
-  grid-column: 2/3;
-  margin-top: -35px;
-}
-
 img {
-  max-width: 80%;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-p {
-  line-height: 21px;
-  font-family: readex pro, sans-serif;
+#kropsterapi {
+  margin: 30px;
+}
+
+footer {
+  background-color: #c281b6;
+  color: white;
+
+  padding: 30px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+#tid {
+  margin-bottom: 50px;
+}
+
+#kontakt {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 900px) {
+  #kropsterapi {
+    margin: 100px;
+  }
+  #boks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #billede {
+    grid-column: 1/2;
+  }
+
+  #tekst {
+    grid-column: 2/3;
+    margin-top: -35px;
+  }
+
+  img {
+    max-width: 80%;
+  }
+
+  /*p {
+  font-family: readex pro;
   font-weight: lighter;
 }
 
 h1 {
-  font-family: Playfair display, sans-serif;
+  font-family: Playfair display;
   font-weight: bold;
   font-size: 2rem;
 }
 
 h3 {
-  font-family: readex pro, sans-serif;
+  font-family: readex pro;
   font-weight: normal;
 }
+*/
 
-footer {
-  background-color: #a67298;
-  color: white;
+  footer {
+    background-color: #c281b6;
+    color: white;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+  }
+  #tid {
+    margin-left: 10px;
+    margin-right: 50px;
+  }
 
-  padding: 80px;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: -10px;
-  display: flex;
-}
-#tid {
-  margin-left: 10px;
-  margin-right: 50px;
-}
+  #kontakt {
+    margin-right: 500px;
+    place-content: left;
+  }
 
-#kontakt {
-  margin-right: 500px;
+  body {
+    background-color: #f2f2f2;
+  }
 }
