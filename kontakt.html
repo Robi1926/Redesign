@@ -7,74 +7,82 @@
     <link rel="stylesheet" href="kontakt.css" />
     <link rel="stylesheet" href="Sora-Light.ttf" />
     <link rel="stylesheet" href="Sora-Regular.ttf" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
     <title>Document</title>
   </head>
-  <header class="banner">
-    <div class="logo">
-      <a href="">Logo</a>
-      <h1>Lises Kropsterapi</h1>
+  <div class="top"><h1>Lises Kropsterapi</h1>
+    <header class="banner">
+      <button class="toggle-btn">
+        <img src="/billeder/toggle.png" style="" alt="Menu " />
+      </button>
+  
+      <nav>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="behandling.html">Behandling</a></li>
+          <li><a href="kropsterapi.html">Kropsterapi</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+  
     </div>
-    <button class="toggle-btn">Menu</button>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="behandling.html">Behandling</a></li>
-        <li><a href="kropsterapi.html">Kropsterapi</a></li>
-        <li><a href="kontakt.html">Kropsterapi</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <div class="grid-container">
-    <div class="grid-item1">
-      <h2>Kontakt mig</h2>
-      <h3>Telefon: +45 42 80 42</h3>
-      <p>
-        Her kan du fange mig alle ugens dage hvis du vil booke en tid eller høre
-        nærmere om behandling. Hvis jeg ikke når at svare telefonen er du
-        velkommen til at ligge en besked med navn og telefonnummer. Så ringer
-        jeg tilbage til dig.
-      </p>
-      <h3>Adresse: Thurøvej 6, kælderen. 2000 Frederiksberg</h3>
-      <p>Klinikken befinder sig 3 minutters gang fra Fasanvej St. (Metro)</p>
 
-      <p>Her kan du kontakte mig efter nærmere aftale.</p>
-      <p>
-        Du kan også sende mig en besked via. kontaktformularen på siden her.
-        Beskeden sendes direkte til min mail: Lise@Lise.dk
-      </p>
+
+  <body>
+      <div class="grid-item1">
+        <h2>Kontakt mig</h2>
+        <h3>Telefon: +45 42 80 42</h3>
+        <p>
+          Her kan du fange mig alle ugens dage hvis du vil booke en tid eller
+          høre nærmere om behandling. Hvis jeg ikke når at svare telefonen er du
+          velkommen til at ligge en besked med navn og telefonnummer. Så ringer
+          jeg tilbage til dig.
+        </p>
+        <h3>Adresse: Thurøvej 6, kælderen. 2000 Frederiksberg</h3>
+        <p>Klinikken befinder sig 3 minutters gang fra Fasanvej St. (Metro)</p>
+
+        <p>Her kan du kontakte mig efter nærmere aftale.</p>
+        <p>
+          Du kan også sende mig en besked via. kontaktformularen på siden her.
+          Beskeden sendes direkte til min mail: Lise@Lise.dk
+        </p>
+      </div>
+
+      <form>
+        <div class="form-felt">
+          <label for="full-name">Fulde Navn</label>
+          <input type="text" id="full-name" />
+        </div>
+        <div class="form-felt">
+          <label for="e-mail">E-mail</label>
+          <input placeholder=""" type="email" id="email" />
+        </div>
+
+        <div class="form-felt">
+          <label for="Telefonnummer">Telefonnummer</label>
+          <input placeholder="" type="tel" id="tel" />
+        </div>
+
+        <div class="form-felt">
+          <label for="besked">Besked</label>
+          <textarea name="besked" type="text" id="text"></textarea>
+        </div>
+        <div class="besked">
+        <button>Send besked</button>
+      </div>
+      </form>
+      <div class="grid-item3">
+        <img src="/billeder/rute.png" alt="billede1" style="height: 450px" />
+      </div>
+      <div class="grid-item4">
+        <img src="/billeder/rute.png" alt="billede1" style="height: 450px" />
+      </div>
     </div>
-
-    <form>
-      <div class="form-felt">
-        <label for="full-name">Fulde Navn</label>
-        <input type="text" id="full-name" />
-      </div>
-      <div class="form-felt">
-        <label for="e-mail">E-mail</label>
-        <input placeholder="fx mail@mail.dk" type="email" id="email" />
-      </div>
-
-      <div class="form-felt">
-        <label for="Telefonnummer">Telefonnummer</label>
-        <input placeholder="fx telefonnummer" type="tel" id="tel" />
-      </div>
-
-      <div class="form-felt">
-        <label for="besked">Besked</label>
-        <textarea name="besked" type="text" id="text"></textarea>
-      </div>
-      <button>Send besked</button>
-    </form>
-    <div class="grid-item3">
-      <img src="/billeder/rute.png" alt="billede1" style="height: 450px" />
-    </div>
-    <div class="grid-item4">
-      <img src="/billeder/rute.png" alt="billede1" style="height: 450px" />
-    </div>
-  </div>
+  </body>
   <footer>
     <div id="tid">
       <h3>Åbningstider</h3>
