@@ -13,24 +13,35 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="robots" content="noindex" />
   </head>
   <body>
-    <div class="header">
-      <div class="grid-item">
-        <h1>Lises Kropsterapi</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="behandling.html">Behandlinger</a></li>
-            <li><a href="kropsterapi.html">Kropsterapi</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="top"><h1>Lises Kropsterapi</h1>
+    <header class="banner">
+      <button class="toggle-btn">
+        <img src="/billeder/toggle.png" style="" alt="Menu " />
+      </button>
+  
+      <nav>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="behandling.html">Behandling</a></li>
+          <li><a href="kropsterapi.html">Kropsterapi</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+  
+    </div>
     </div>
     <section id="kropsterapi">
       <div id="boks">
-        <div id="billede"><img src="billeder/test.jpg" alt="" /></div>
+        <div id="billede">
+          <img src="billeder/plakat_redigeret.webp" alt="" />
+          <img src="billeder/hoved_redigeret.webp" alt="" />
+        </div>
         <div id="tekst">
           <h1>Kropsterapi</h1>
           <h3>Hvad er kropsterapi?</h3>
@@ -101,5 +112,7 @@
       </div>
     </footer>
     <script src="login.js"></script>
+    <script src="burgermenu.js"></script>
+
   </body>
 </html>

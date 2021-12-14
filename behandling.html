@@ -14,11 +14,26 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="mutual_style.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
-    </header>
+    <div class="top">
+      <h1>Lises Kropsterapi</h1>
+      <header class="banner">
+        <button class="toggle-btn">
+          <img src="/billeder/toggle.png" alt="Menu" />
+        </button>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="behandling.html">Behandling</a></li>
+            <li><a href="kropsterapi.html">Kropsterapi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
       <section id="behandling">
         <h1>Behandling og tidsbestilling</h1>
@@ -87,5 +102,6 @@
         <p>Thurøvej 6, kælderen, 2000 Frederiksberg</p>
       </div>
     </footer>
+    <script src="burgermenu.js"></script>
   </body>
 </html>

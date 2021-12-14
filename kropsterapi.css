@@ -1,6 +1,5 @@
 img {
   max-width: 100%;
-  border-radius: 8px;
 }
 
 #kropsterapi {
@@ -25,7 +24,7 @@ footer {
   margin-bottom: 50px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   #kropsterapi {
     margin: 100px;
   }
@@ -46,24 +45,6 @@ footer {
   img {
     max-width: 80%;
   }
-
-  /*p {
-  font-family: readex pro;
-  font-weight: lighter;
-}
-
-h1 {
-  font-family: Playfair display;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-h3 {
-  font-family: readex pro;
-  font-weight: normal;
-}
-*/
-
   footer {
     background-color: #c281b6;
     color: white;
