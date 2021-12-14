@@ -32,16 +32,10 @@ body {
 }
 
 /**************************************** tidsbestilling indstillinger *************************/
-.tidsbestilling {
+.grid {
   display: grid;
 }
 
-.test_foto {
-  width: 50%;
-  place-self: center start;
-  margin-left: 40px;
-  grid-column: 1;
-}
 /* "book" er klassen der indeholder tekst der opfordrer til at bestille en tid */
 .book {
   font-family: "Sora", sans-serif;
@@ -55,8 +49,10 @@ body {
 .specifikationer {
   font-family: "Sora", sans-serif;
   font-size: 0.5rem;
-  grid-column: 2;
-  margin-right: 50px;
+}
+
+.test_foto {
+  width: 50%;
 }
 
 /* responsiv indstilling så overskriften og p passer i størrelsen */
