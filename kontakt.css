@@ -78,6 +78,7 @@ form {
   font-family: "Sora", sans-serif;
   font-weight: normal;
   color: #ac6092;
+  margin-top: 100px;
 }
 .grid-item {
   grid-column: 1;
@@ -85,6 +86,7 @@ form {
 .grid-item3 {
   grid-row: 2;
   grid-column: 3/4;
+  outline: 3px solid #ac6092;
 }
 .grid-item4 {
   grid-row: 3;
@@ -146,7 +148,7 @@ img {
   margin-left: 400px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
 }
 .toggle-btn {
   color: #934073;
