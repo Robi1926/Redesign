@@ -1,6 +1,11 @@
 img {
   width: 100%;
 }
+body {
+  background-color: #fffaf0;
+  margin-left: 150px;
+  margin-right: 150px;
+}
 
 /******************************** section 1 - behandlingsindstillinger ***********************/
 
