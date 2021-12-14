@@ -14,11 +14,26 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="mutual_style.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
-    </header>
+    <div class="top">
+      <h1>Lises Kropsterapi</h1>
+      <header class="banner">
+        <button class="toggle-btn">
+          <img src="/billeder/toggle.png" style="" alt="Menu " />
+        </button>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="behandling.html">Behandling</a></li>
+            <li><a href="kropsterapi.html">Kropsterapi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
       <section id="behandlinger">
         <div class="overskrift_behandling">
@@ -40,6 +55,8 @@
         </article>
       </section>
     </main>
+    <script src="burgermenu.js"></script>
+
     <footer></footer>
   </body>
 </html>
