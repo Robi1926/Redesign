@@ -1,68 +1,76 @@
-body {
-  background-color: #f2f2f2;
+img {
+  width: 100%;
 }
 
-/**************************************** overskrift indstillinger *************************/
-/* overskrift dækker over den første del af "behandlings" siden, og "tidsbestilling" er den anden del af siden */
-.overskrift_behandling {
-  display: grid;
+/******************************** section 1 - behandlingsindstillinger ***********************/
+
+h1,
+h2,
+h3,
+p {
+  margin: 10px;
+  padding: 10px;
 }
 
-.overskrift_behandling h1 {
-  font-family: "Sora", sans-serif;
-  font-size: 1rem;
-  border-bottom: 2px solid #f2ccc8;
-  margin: 40px;
-  padding: 40px;
-  padding-bottom: 5px;
+#behandling img {
+  width: 85%;
+  margin: 10px;
+  padding: 10px;
 }
 
-@media (min-width: 700px) {
-  .overskrift_behandling h1 {
-    font-size: 3rem;
+/********* layout-indstillinger ************/
+@media (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .wrapper_t {
+    display: grid;
+  }
+
+  .col_t {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 20px;
+    padding: 20px;
   }
 }
 
-/**************************************** overskrift IMG indstillinger *************************/
-.ph_img {
-  place-self: center;
-  width: 50%;
+@media (min-width: 800px) {
+  .wrapper_g {
+    display: flex;
+  }
+
+  .col_g {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/******************************** section 2 - tidsbestillings-indstillinger ***********************/
+
+#tidsbestilling img {
+  width: 85%;
+  margin: 10px;
+  padding: 10px;
+}
+
+/******************************** section 3 - klippe/gavekort-indstillinger ***********************/
+
+#gavekort img {
+  width: 75%;
   margin: 20px;
   padding: 20px;
 }
 
-/**************************************** tidsbestilling indstillinger *************************/
-.grid {
-  display: grid;
-}
-
-/* "book" er klassen der indeholder tekst der opfordrer til at bestille en tid */
-.book {
-  font-family: "Sora", sans-serif;
-  font-size: 0.5rem;
-  border-bottom: 2px solid #f2ccc8;
-  margin: 40px;
-  padding: 40px;
-  padding-bottom: 5px;
-}
-
-.specifikationer {
-  font-family: "Sora", sans-serif;
-  font-size: 0.5rem;
-}
-
-.test_foto {
-  width: 50%;
-}
-
-/* responsiv indstilling så overskriften og p passer i størrelsen */
-@media (min-width: 700px) {
-  .book {
-    font-size: 2rem;
-  }
-
-  .specifikationer {
-    font-size: 2rem;
-    margin-right: 80px;
-  }
+.gave {
+  font-size: 1.5rem;
 }
