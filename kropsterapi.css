@@ -73,7 +73,6 @@ footer {
 
   #kontakt {
     margin-right: 500px;
-    place-content: left;
   }
 
   body {
@@ -112,7 +111,6 @@ footer {
     list-style: none;
     padding: 0;
     gap: 20px;
-    display: inline-flexbox;
     padding-top: 15px;
   }
 
