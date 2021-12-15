@@ -8,8 +8,7 @@ body {
 img {
   max-width: 100%;
   outline: 3px solid #c281b6;
-  padding: 10px;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 #kropsterapi {
