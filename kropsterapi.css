@@ -8,8 +8,7 @@ body {
 img {
   max-width: 100%;
   outline: 3px solid #c281b6;
-  padding: 10px;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 #kropsterapi {
@@ -74,7 +73,6 @@ footer {
 
   #kontakt {
     margin-right: 500px;
-    place-content: left;
   }
 
   body {
@@ -113,7 +111,6 @@ footer {
     list-style: none;
     padding: 0;
     gap: 20px;
-    display: inline-flexbox;
     padding-top: 15px;
   }
 
