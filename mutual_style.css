@@ -1,8 +1,5 @@
 body {
   background-color: #fffaf0;
-
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 h1 {
@@ -33,7 +30,7 @@ p {
   line-height: 30px;
 }
 
-li {
+/*li {
   list-style: none;
   color: #ac6092;
   font-family: "Sora", sans-serif;
