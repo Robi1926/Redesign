@@ -1,5 +1,8 @@
 img {
   width: 100%;
+  outline: 3px solid #c281b6;
+  padding: 10px;
+  margin: 10px;
 }
 /***************************** overskrift + p  - indstillinger ******************/
 
@@ -36,46 +39,48 @@ p {
   padding: 10px;
 }
 /**************************** generelle indstillinger der skal gælde altid ********/
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ac6092;
-}
 
-.form-felt {
-  margin: 5px;
-  padding: 5px;
-  gap: 2px;
-}
-.foto {
-  width: 80%;
-  margin: 10px;
-  padding: 10px;
-}
-.besked {
-  font-family: "Sora", sans-serif;
-  font-weight: normal;
-  margin: 10px;
-  padding: 10px;
-}
+@media (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ac6092;
+  }
 
-input {
-  display: flex;
-  justify-content: center;
-}
+  .form-felt {
+    margin: 5px;
+    padding: 5px;
+    gap: 2px;
+  }
+  .foto {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .besked {
+    font-family: "Sora", sans-serif;
+    font-weight: normal;
+    margin: 10px;
+    padding: 10px;
+  }
 
-textarea {
-  display: flex;
-  justify-content: center;
-  margin-right: 25px;
-}
+  input {
+    display: flex;
+    justify-content: center;
+  }
 
-button {
-  color: #934073;
-  border: none;
-  outline: 3px solid #ac6092;
-  border-radius: 12px;
+  textarea {
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+  }
+
+  button {
+    color: #934073;
+    border: none;
+    border-radius: 12px;
+  }
 }
 
 /****************************** generelle indstillinger *****************/
@@ -153,6 +158,7 @@ footer {
     font-weight: normal;
     margin-top: 56px;
     margin-bottom: 20px;
+    color: #ac6092;
   }
 
   .form-felt {
@@ -160,8 +166,13 @@ footer {
     grid-column: 2;
     grid-row: 3;
     gap: 0.3rem;
-    padding: 2px solid #ac6092;
     margin-bottom: 10px;
+  }
+
+  button {
+    color: #934073;
+    border: none;
+    border-radius: 12px;
   }
 
   .grid-item {
@@ -199,7 +210,6 @@ footer {
 
   #kontakt {
     margin-right: 500px;
-    place-content: left;
   }
 
   #boks {
@@ -251,7 +261,6 @@ footer {
     list-style: none;
     padding: 0;
     gap: 20px;
-    display: inline-flexbox;
     padding-top: 15px;
   }
 
@@ -268,4 +277,11 @@ nav.shown {
   display: grid;
   grid-row: 1;
   grid-column: 1;
+}
+
+.toggle-btn {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  border-radius: 12px;
 }
