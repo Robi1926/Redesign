@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="Sora-Light.ttf" />
     <link rel="stylesheet" href="Sora-Regular.ttf" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Document</title>
+    <title>Kontakt</title>
   </head>
-  <div class="top"><h1>Lises Kropsterapi</h1>
+  <div class="top">
+    <h1>Lises Kropsterapi</h1>
     <header class="banner">
-      <button class="toggle-btn">
-        <img src="/billeder/toggle.png" style="" alt="Menu " />
-      </button>
-  
+      <button class="toggle-btn">Menu</button>
+
       <nav>
         <ul>
           <li><a href="index.html">Hjem</a></li>
@@ -26,75 +31,77 @@
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
-      
     </header>
-  
-    </div>
+  </div>
   <div class="grid-container">
+    <div class="grid-item1">
+      <h2>Kontakt mig</h2>
+      <h3>Telefon: +45 42 80 42</h3>
+      <p>
+        Her kan du fange mig alle ugens dage hvis du vil booke en tid eller høre
+        nærmere om behandling. Hvis jeg ikke når at svare telefonen er du
+        velkommen til at ligge en besked med navn og telefonnummer. Så ringer
+        jeg tilbage til dig.
+      </p>
+      <h3>Adresse: Thurøvej 6, kælderen. 2000 Frederiksberg</h3>
+      <p>Klinikken befinder sig 3 minutters gang fra Fasanvej St. (Metro)</p>
 
+      <p>Her kan du kontakte mig efter nærmere aftale.</p>
+      <p>
+        Du kan også sende mig en besked via. kontaktformularen på siden her.
+        Beskeden sendes direkte til min mail: Lise@Lise.dk
+      </p>
+    </div>
 
-  <body>
-      <div class="grid-item1">
-        <h2>Kontakt mig</h2>
-        <h3>Telefon: +45 42 80 42</h3>
-        <p>
-          Her kan du fange mig alle ugens dage hvis du vil booke en tid eller
-          høre nærmere om behandling. Hvis jeg ikke når at svare telefonen er du
-          velkommen til at ligge en besked med navn og telefonnummer. Så ringer
-          jeg tilbage til dig.
-        </p>
-        <h3>Adresse: Thurøvej 6, kælderen. 2000 Frederiksberg</h3>
-        <p>Klinikken befinder sig 3 minutters gang fra Fasanvej St. (Metro)</p>
-
-        <p>Her kan du kontakte mig efter nærmere aftale.</p>
-        <p>
-          Du kan også sende mig en besked via. kontaktformularen på siden her.
-          Beskeden sendes direkte til min mail: Lise@Lise.dk
-        </p>
+    <form>
+      <div class="form-felt">
+        <label for="full-name">Fulde Navn</label>
+        <input type="text" id="full-name" />
+      </div>
+      <div class="form-felt">
+        <label for="e-mail">E-mail</label>
+        <input placeholder="" type="email" id="email" />
       </div>
 
-      <form>
-        <div class="form-felt">
-          <label for="full-name">Fulde Navn</label>
-          <input type="text" id="full-name" />
-        </div>
-        <div class="form-felt">
-          <label for="e-mail">E-mail</label>
-          <input placeholder="" type="email" id="email" />
-        </div>
+      <div class="form-felt">
+        <label for="Telefonnummer">Telefonnummer</label>
+        <input placeholder="" type="tel" id="tel" />
+      </div>
 
-        <div class="form-felt">
-          <label for="Telefonnummer">Telefonnummer</label>
-          <input placeholder="" type="tel" id="tel" />
-        </div>
-
-        <div class="form-felt">
-          <label for="besked">Besked</label>
-          <textarea name="besked" type="text" id="text"></textarea>
-        </div>
-        <div class="besked">
+      <div class="form-felt">
+        <label for="besked">Besked</label>
+        <textarea name="besked" type="text" id="text"></textarea>
+      </div>
+      <div class="besked">
         <button>Send besked</button>
       </div>
-      </form>
-      <div class="grid-item3">
-        <img src="/billeder/rute.png" alt="billede1" style="height: 450px" />
-      </div>
-      <div class="grid-item4">
-        <img src="/billeder/rute.png" alt="billede1" style="height: 450px" />
-      </div>
+    </form>
+    <div class="grid-item3">
+      <img src="/billeder/rute.png" class="foto" alt="billede1" />
     </div>
-  </body>
+    <div class="grid-item4">
+      <img src="/billeder/krystaller.webp" class="foto" alt="billede1" />
+    </div>
+  </div>
   <footer>
     <div id="tid">
-      <h3>Åbningstider</h3>
-      <p>Alle ugens dage efter aftale</p>
+      <h3 class="footer">Åbningstider</h3>
+      <p class="footer">Alle ugens dage efter aftale</p>
     </div>
     <div id="kontakt">
-      <h3>Kontakt mig</h3>
-      <p>Telefon: 29 42 80 42</p>
-      <p>Thurøvej 6, kælderen, 2000 Frederiksberg</p>
+      <h3 class="footer">Kontakt mig</h3>
+      <p class="footer">Telefon: 29 42 80 42</p>
+      <p class="footer">Thurøvej 6, kælderen, 2000 Frederiksberg</p>
     </div>
-    <div id="folg"><h3>Følg mig</h3></div>
-    <script src="burgermenu.js"></script>
+    <div id="folg">
+      <h3 class="footer">Følg mig</h3>
+      <a href="https://www.instagram.com/lises_kropsterapi"
+        ><img src="instagram.svg" class="foto_f" alt=""
+      /></a>
+      <a href="https://www.facebook.com/Liseskropsterapi"
+        ><img src="facebook.svg" class="foto_f" alt=""
+      /></a>
+    </div>
   </footer>
+  <script src="burgermenu.js"></script>
 </html>

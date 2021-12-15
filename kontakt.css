@@ -1,23 +1,30 @@
-body {
-  color: ;
+img {
+  width: 100%;
 }
+/***************************** overskrift + p  - indstillinger ******************/
 
 h1 {
   font-family: "Sora", sans-serif;
   font-weight: normal;
   color: #934073;
+  margin: 10px;
+  padding: 10px;
 }
 
 h2 {
   font-family: "Sora", sans-serif;
   font-weight: normal;
   color: #ac6092;
+  margin: 10px;
+  padding: 10px;
 }
 
 h3 {
   font-family: "Sora", sans-serif;
   font-weight: normal;
   color: #ac6092;
+  margin: 10px;
+  padding: 10px;
 }
 
 p {
@@ -25,23 +32,62 @@ p {
   font-weight: lighter;
   line-height: 30px;
   color: #000;
+  margin: 10px;
+  padding: 10px;
 }
-.header {
-  height: 100px;
+/**************************** generelle indstillinger der skal gælde altid ********/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ac6092;
 }
+
+.form-felt {
+  margin: 5px;
+  padding: 5px;
+  gap: 2px;
+}
+.foto {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+}
+.besked {
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+button {
+  color: #934073;
+  border: none;
+  outline: 3px solid #ac6092;
+  border-radius: 12px;
+}
+
+/****************************** generelle indstillinger *****************/
 
 body {
   background-color: #fffaf0;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr 4fr;
-  column-gap: 50px;
+a {
+  color: #ac6092;
 }
+
 li {
   list-style: none;
   color: #ac6092;
@@ -50,117 +96,170 @@ li {
   margin-top: 20px;
 }
 
-a {
-  color: #ac6092;
+.header {
+  height: 100px;
 }
 
-.grid-item1 {
-  grid-row: 2;
-  grid-column: 1 / span 2;
-}
-
-.form-felt {
-  display: grid;
-  grid-column: 2;
-  grid-row: 3;
-  gap: 0.5rem;
-}
-.form-felt {
-  grid-column: 2;
-  grid-row: 2/3;
-  margin-top: 10px;
-  gap: 1px;
-}
-form {
-  grid-column: 3;
-  grid-row: 3;
-  width: 500px;
-  font-family: "Sora", sans-serif;
-  font-weight: normal;
-  color: #ac6092;
-  margin-top: 100px;
-}
-.grid-item {
-  grid-column: 1;
-}
-.grid-item3 {
-  grid-row: 2;
-  grid-column: 3/4;
-  outline: 3px solid #ac6092;
-}
-.grid-item4 {
-  grid-row: 3;
-  grid-column: 2;
-}
-footer {
-  padding: 40px;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: -10px;
-  display: flex;
-  outline: 2px solid #934073;
-  margin-bottom: 10px;
-}
-#tid {
-  margin-left: 10px;
-  margin-right: 50px;
-}
-
-#kontakt {
-  margin-right: 500px;
-}
-img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.banner {
-  justify-content: space-between;
-  grid-row: 1;
-  height: 10px;
-}
-
-.banner ul {
-  list-style: none;
-  padding: 0;
-  gap: 20px;
-  display: inline-flexbox;
-  padding-top: 15px;
-}
-
-/* burgermenu */
-
-.besked {
-  background-color: #ac6092;
-  font-family: "Sora", sans-serif;
-  font-weight: normal;
-  border-radius: 12px;
-  width: 90px;
-  padding: 4px;
-  margin-top: 10px;
-}
-.top {
-  display: grid;
-  justify-content: space-between;
-  border: 2px solid #a33d81;
-}
-.top h1 {
-  margin-left: 400px;
-}
-
-@media (min-width: 600px) {
-}
 .toggle-btn {
   color: #934073;
   border: none;
-  min-width: 44px;
-  min-height: 44px;
-  font-size: 1.1rem;
-  border-radius: 12px;
-  grid-row: 2;
-  margin-left: -120px;
-  margin-top: 100px;
 }
+
+footer {
+  background-color: #c281b6;
+}
+
+.footer {
+  color: white;
+}
+
+.foto_f {
+  width: 10%;
+  margin: 5px;
+  padding: 5px;
+}
+
+/***************************** grid-indstillinger desktop-layout ***************/
+
+@media (min-width: 600px) {
+  body {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .foto {
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #ac6092;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    column-gap: 50px;
+  }
+
+  .grid-item1 {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+  }
+
+  form {
+    grid-column: 3;
+    grid-row: 3;
+    width: 500px;
+    font-family: "Sora", sans-serif;
+    font-weight: normal;
+    margin-top: 56px;
+    margin-bottom: 20px;
+  }
+
+  .form-felt {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    gap: 0.3rem;
+    padding: 2px solid #ac6092;
+    margin-bottom: 10px;
+  }
+
+  .grid-item {
+    grid-column: 1;
+  }
+  .grid-item3 {
+    grid-row: 2;
+    grid-column: 3/4;
+  }
+
+  .grid-item4 {
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: 60px;
+
+    margin-left: -36%;
+    margin-bottom: 100px;
+  }
+
+  footer {
+    display: flex;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .foto_f {
+    width: 100%;
+  }
+
+  #tid {
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+
+  #kontakt {
+    margin-right: 500px;
+    place-content: left;
+  }
+
+  #boks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #billede {
+    grid-column: 1/2;
+  }
+
+  #tekst {
+    grid-column: 2/3;
+    margin-top: -35px;
+  }
+  .besked {
+    width: 90px;
+    margin-top: 45px;
+  }
+  /******************** nav-indstillinger *******************/
+
+  .banner {
+    justify-content: space-between;
+    grid-row: 1;
+    height: 10px;
+  }
+
+  .top {
+    display: grid;
+    justify-content: space-between;
+    border: 2px solid #a33d81;
+  }
+
+  .top h1 {
+    margin-left: 400px;
+  }
+
+  .toggle-btn {
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    grid-row: 2;
+    margin-left: -120px;
+    margin-top: 100px;
+  }
+
+  .banner ul {
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    display: inline-flexbox;
+    padding-top: 15px;
+  }
+
+  nav.shown {
+    margin-left: -120px;
+  }
+}
+
 nav {
   display: none;
 }
@@ -169,5 +268,4 @@ nav.shown {
   display: grid;
   grid-row: 1;
   grid-column: 1;
-  margin-left: -120px;
 }
